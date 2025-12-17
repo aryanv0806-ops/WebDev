@@ -64,7 +64,7 @@ console.log(Nan==Nan);<br>
   whether a value is precisely equal to the other, and the second tests whether it
   is not precisely equal. So "" === false is false as expected.
 
-## an important workign of logical operators.
+## an important working of logical operators.
 
 - `The || operator, for example, will return the value to its left when that can be converted to true and will return the value on its right otherwise.` This has the expected effect when the values are Boolean and does something analogous for values of other types
 - The `&& `operator works similarly but the other way around. When the value to its left is something that converts to false, it returns that value, and otherwise it returns the value on its right.
