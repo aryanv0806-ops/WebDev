@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bar</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            background-color: antiquewhite;
+            margin:0px;
+            padding: 20px;
+        }
+        .card{
+            background-color: #947c7c;
+            margin: 10px;
+            padding: 12px;
+        }
+        .nav ul{
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .nav li{
+            display: inline;
+
+        }
+        .nav a{
+            text-decoration: none;
+            color: aliceblue;
+            padding: 5px 10px;
+            position: relative;
+        }
+        .nav a::before{
+            content: "";
+            position: absolute;
+            height: 2px;
+            background-color: #5e72d6;
+            width: 100%;
+            bottom: 0px;
+            left: 0px;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+        }
+        .nav a:hover::before{
+            transform: scaleX(1);
+        }
+        .nav button{
+            border-radius: 8px;
+            background-color: #5e72d6;
+            padding: 5px 10px;
+            cursor: pointer;
+            color: aliceblue;
+            border-style: hidden;
+            border-color: none;
+        }
+        .nav button:hover{
+            background-color: azure;
+            color: black;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><button type="submit">Login</button></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
