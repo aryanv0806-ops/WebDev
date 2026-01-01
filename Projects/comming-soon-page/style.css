@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding:0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background:linear-gradient(145deg, rgb(166, 43, 43), rgb(60, 53, 53));
+    margin: 0%;
+        padding: 0%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+#btn{
+    border-radius: 8px;
+    padding: 8px;
+    background-color: #762626;
+    border: 1px solid rgb(59, 12, 12);
+    color: azure;
+    width: 105%;
+}
+#btn:hover{
+    cursor: pointer ;
+    background-color: aliceblue;
+    color: black;
+    border: 3px solid black;
+}
+#email{
+    padding: 8px;
+    display: flex;
+    justify-content:right;
+    margin-bottom: 6px;
+    width: 100%;
+}
+.container h3{
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+}
