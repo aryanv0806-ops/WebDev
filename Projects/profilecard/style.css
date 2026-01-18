@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
+body{
+    font-family: "Share Tech", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.image{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    position: relative;
+    padding: 4px;
+    background-color: antiquewhite;
+}
+.image .pf{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    object-fit: cover;
+}
