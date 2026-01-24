@@ -11,7 +11,7 @@ function updateclock() {
     const s = String(now.getSeconds()).padStart(2, '0');
     clock.innerText = `${h}:${m}:${s}`;
 }
-setInterval(updateclock, 1000);
+setInterval(updateclock, 1000 );
 updateclock();
 
 function format(totaltime) {
@@ -22,28 +22,41 @@ function format(totaltime) {
     return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
 }
 let time = null;
-let seconds = 0;
+let msCount = 0;
+
+function format(totalMs) {
+    let hrs = Math.floor(totalMs / 360000);
+    let mins = Math.floor((totalMs % 360000) / 6000);
+    let secs = Math.floor((totalMs % 6000) / 100);
+    let ms = totalMs % 100;
+
+    return (
+        String(hrs).padStart(2, '0') + ":" +
+        String(mins).padStart(2, '0') + ":" +
+        String(secs).padStart(2, '0') + "." +
+        String(ms).padStart(2, '0')
+    );
+}
+
 start.addEventListener('click', function () {
-    audio.play(audio);
+    audio.play();
     if (time) return;
     time = setInterval(() => {
-        seconds++;
-        timer.innerText=format(seconds);
-    }, 1000);
+        msCount++;
+        timer.innerText = format(msCount);
+    }, 10);
 })
+
 stop.addEventListener('click', function () {
-    audio.play(audio);
+    audio.play();
     clearInterval(time);
     time = null;
 })
+
 reset.addEventListener('click', function () {
-    audio.play(audio);
+    audio.play();
     clearInterval(time);
     time = null;
-    seconds = 0;
-    timer.innerText = "00:00:00";
-    time = setInterval(() => {
-        seconds++;
-        timer.innerText=format(seconds);
-    }, 1000);
+    msCount = 0;
+    timer.innerText = "00:00:00.00";
 })

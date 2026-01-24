@@ -14,7 +14,7 @@ body{
     color: #E8DBFC;
     border-radius: 10px;
     width: 50%;
-    height: 400px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     align-content: space-around;
@@ -41,3 +41,74 @@ body{
     border-radius: 50%;
     padding: 8px;
 }
+.stopwatch>h2{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+.stopwatch{
+    background-color: #4B4E53;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 30px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+}
+#timer{
+    font-size: 25px;
+    color: #000000;
+    border-radius: 8px;
+    background-color: #947f07;
+    padding: 5px;
+    margin: 8px;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    justify-items: stretch;
+    padding: 8px;
+}
+#start{
+    font-size: large;
+    padding: 7px;
+    margin: 5px;
+    border-style: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+#start:hover{
+    background-color: #000000;
+    color: #E8DBFC;
+    cursor: pointer;
+}
+#reset {
+    font-size: large;
+    padding: 7px;
+    margin: 5px;
+    border-style: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#reset:hover {
+    background-color: #000000;
+    color: #E8DBFC;
+    cursor: pointer;
+}
+#stop {
+    font-size: large;
+    padding: 7px;
+    margin: 5px;
+    border-style: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#stop:hover {
+    background-color: #000000;
+    color: #E8DBFC;
+    cursor: pointer;
+}
+
