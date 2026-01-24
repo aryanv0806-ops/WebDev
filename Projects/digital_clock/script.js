@@ -37,16 +37,23 @@ function format(totalMs) {
         String(ms).padStart(2, '0')
     );
 }
-
-start.addEventListener('click', function () {
+function startTimer() {
     audio.play();
     if (time) return;
     time = setInterval(() => {
         msCount++;
         timer.innerText = format(msCount);
     }, 10);
-})
+}
 
+start.addEventListener('click', startTimer);
+
+window.addEventListener('keydown', function (event) {
+    if (event.code === 'Space') {
+        event.preventDefault(); 
+        startTimer();
+    }
+});
 stop.addEventListener('click', function () {
     audio.play();
     clearInterval(time);
