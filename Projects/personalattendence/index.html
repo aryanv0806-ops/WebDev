@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Attendance</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><div class="page">
+    <nav class="navigation">
+        <ul class="list">
+            <li id="items"><a href="#timetable">TimeTable</a></li>
+            <li id="items"><a href="#today">Class</a></li>
+            <li id="items"><a href="#attendance">Your Attendance</a></li>
+        </ul>
+    </nav>
+    <div class="timetable">
+        <h2 id="head1">Time Table 2<sup>nd</sup> Semester</h2>
+        <div class="table">
+            <table border="1" cellpadding="5" cellspacing="3">
+                <thead>
+                    <tr>
+                        <th>DATE / TIME</th>
+                        <th>8:00 - 9:00</th>
+                        <th>9:00 - 10:00</th>
+                        <th>10:00 - 11:00</th>
+                        <th>11:00 - 12:00</th>
+                        <th>12:00 - 12:30</th>
+                        <th>12:30 - 13:00</th>
+                        <th>13:00 - 14:00</th>
+                        <th>14:00 - 15:00</th>
+                        <th>15:00 - 16:00</th>
+                        <th>16:00 - 17:00</th>
+                        <th>17:00 - 18:00</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Monday</strong></td>
+                        <td></td>
+                        <td></td>
+                        <td>Application Programming</td>
+                        <td>Introduction to Linear Algebra</td>
+                        <td colspan="2" id="break">B</td>
+                        <td>Communication Skills</td>
+                        <td></td>
+                        <td colspan="2">Application Programming Lab (A1 - LAB 1)<br>Communication (A2)</td>
+                        <td></td>
+                    </tr>
+            
+                    <tr>
+                        <td><strong>Tuesday</strong></td>
+                        <td></td>
+                        <td></td>
+                        <td>Data Structures</td>
+                        <td colspan="2">Probability and Statistics</td>
+                        
+                        <td id="break">R</td>
+                        <td>Application Programming (ROOM 303)</td>
+                        <td></td>
+                        <td colspan="2">Data Structures(A2- LAB 3)</td>
+                        <td></td>
+                    </tr>
+            
+                    <tr>
+                        <td><strong>Wednesday</strong></td>
+                        <td></td>
+                        <td></td>
+                        <td>Introduction to Linear Algebra</td>
+                        <td>Probability and Statistics</td>
+                        <td colspan="2" id="break">E</td>
+                        <td>Data Structures</td>
+                        <td></td>
+                        <td colspan="2">Data Structures Lab (A1 - LAB 6)<br>IT Workshop(A2- LAB 1)</td>
+                        <td></td>
+                    </tr>
+            
+                    <tr>
+                        <td><strong>Thursday</strong></td>
+                        <td></td>
+                        <td></td>
+                        <td colspan="2">Probability and Statistics (10:00 - 11:30)</td>
+                        <td colspan="2" id="break">A</td>
+                        <td>Application Programming</td>
+                        <td>Communication Skills (303)</td>
+                        <td colspan="2">Communication (A1)</td>
+                        <td></td>
+                    </tr>
+            
+                    <tr>
+                        <td><strong>Friday</strong></td>
+                        <td></td>
+                        <td>ILA Tute (A1)</td>
+                        <td>ILA Tute (A2)</td>
+                        <td>Introduction to Linear Algebra</td>
+                        <td colspan="2" id="break">K</td>
+                        <td>Data Structures</td>
+                        <td>IT Workshop A1(LAB 5) <br>14:00-16:00</td>
+                        <td colspan="2">Application Programming Lab (A2 - LAB 1)</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="today" id="today">
+            <section class="timer">
+                <h2>Time</h2>
+                <div id="clockog">00:00:00</div>
+            </section>
+            <section class="lecture">
+                <strong>Class:</strong><p id="subject">Application Programming</p>
+            </section>
+        </div>
+        <div class="attendance" id="attendance">
+            <h2>Your Attendance:</h2>
+            <div class="subject-container">
+                <div class="subject-item"><input type="checkbox" id="ila" name="subjects" value="Linear Algebra"><label
+                        for="ila">Linear Algebra</label></div>
+                <div class="subject-item"><input type="checkbox" id="prob" name="subjects" value="Probability & Stats"><label
+                        for="prob">Probability & Stats</label></div>
+                <div class="subject-item"><input type="checkbox" id="ap" name="subjects" value="App Programming"><label for="ap">App
+                        Programming</label></div>
+                <div class="subject-item"><input type="checkbox" id="dsa" name="subjects" value="Data Structures"><label
+                        for="dsa">Data Structures</label></div>
+                <div class="subject-item"><input type="checkbox" id="itw" name="subjects" value="IT Workshop"><label for="itw">IT
+                        Workshop</label></div>
+                <div class="subject-item"><input type="checkbox" id="comsk" name="subjects" value="Comm Skills"><label
+                        for="comsk">Comm Skills</label></div>
+                <div class="subject-item"><input type="checkbox" id="ap_lab" name="subjects" value="AP Lab"><label for="ap_lab">AP
+                        Lab</label></div>
+                <div class="subject-item"><input type="checkbox" id="ds_lab" name="subjects" value="DS Lab"><label for="ds_lab">DS
+                        Lab</label></div>
+            </div>
+            <div class="din">
+                <label for="date">Select Date:</label>
+                <input type="date" name="Date" id="date">
+            </div>
+            <div class="action-buttons">
+                <button class="btn-present" onclick="markSelected('Present')">✅ Present</button>
+                <button class="btn-absent" onclick="markSelected('Absent')">❌ Absent</button>
+            </div>
+            
+        </div>
+    </div>
+    </div>
+</body>
+</html>

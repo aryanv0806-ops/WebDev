@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+body{
+    background: linear-gradient(270deg,
+        #e9b7ce,
+        #d3f3f1);
+}
+.page{
+    margin: 10vh;
+    background: linear-gradient(270deg, #858e96, #60696b);
+    padding: 19px;
+    border-radius: 8px;
+    color: #f4f5f5;
+    width: 50%;
+    margin-left: 20%;
+}
+.container{
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: space-between;
+}
+input{
+    padding: 10px;
+    border-radius: 10px;
+    border: 0cap;
+    background-color: #c3c0c0fb;
+    margin-right: 10px;
+}
+#addbtn{
+    padding: 8px;
+    border-radius: 10px;
+    border: 0;
+    font-weight: bold;
+    font-style: italic;
+}
+#addbtn:hover{
+    background-color: rgb(3, 114, 53);
+    color: white;
+    cursor: pointer;
+}
+#delete{
+    padding: 8px;
+        border-radius: 10px;
+        border: 0;
+        font-weight: bold;
+        font-style: italic;
+}
+#delete:hover {
+    background-color: rgb(255, 5, 5);
+    color: white;
+    cursor: pointer;
+}
+#listcontainer{
+    list-style: none;
+    color: rgb(254, 253, 253);
+    
+    padding: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#listcontainer li{
+    background-color: rgb(67, 67, 67);
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+li button{
+    padding: 5px;
+    margin: 5px;
+    font-weight: bold;
+}
+li button:hover{
+    background-color: rgb(167, 7, 7);
+    color: white;
+    cursor: pointer;
+}
