@@ -74,3 +74,30 @@
    - selects an element based on a unique id attribute and can only be used once.
 4. ### Class Selector
    - slects one or more elements based on a class attribute that can be used multiple times.
+5. ### Pseudo -classes
+   - Defines styles for a specific state or condition of an html element
+   - a keyword with a colon added to the end of a selector: a:hover{}
+   - <b>State pseudo classes:</b> Dynamic styling basedon user interaction and commonly used for hyperlinks.
+     - a:link=> targets anchor tags that have not yet been visited
+     - a:visited=> targets anchor tags that have been visited.
+     - a:hover=> targets an element when the cursor is placed over it.
+     - a:active=> targets an elements when it is being clicked
+     - `it is best practice ot syle the pseudo classes of anchor tags instead of styling the anchor element directly`
+   - <b> Conditional pseudo class:</b> styling based on elements position i n relation to other elements
+     - li:`first-child`=> targets the first child element
+     - li:`last-child`=> targets the last child element
+     - li:`nth-child(n)`=> targets child elements based on their position(`every nth child`)
+       - li:nth-child(2n)=> means every child elements 2,4,6,8..etc
+       - li:nth-child(2n+1) => 1,3,5,7,..etc
+6. ### Combinator selectors
+   - Combines two or more selectors to target elements based on their positions relative to each other
+   - <b>Descendant Selector: </b>Targets all descendant  elements of a parent.
+     - div p=> targets every p of  div
+   - <b> Direct Descendant Selector:</b>Targets only direct children elements of a parent
+    - div >p=> targets only the first child of div... not other p tag inside other tags inside div
+* <b>`Specifity: priority => ID>Classes & Pseudo classes>type/tag > inheritance`</b>
+* <b>`Inheritance and text-align: when applying the test align property to a block level parent containing inline elements, all children will be impacted`</b>
+* <b>` Body tag and inheritance v/s the Universal Selector:`</b><br>
+    - Body tag: Only applies text properties, used to set default text properites across application.
+    - Universal: appplies all properties, used to reset default styles.
+<!-- Pseudo elements padhna h abhi -->
