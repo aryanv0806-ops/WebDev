@@ -1,23 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Varela+Round&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
-   
+
 }
-body{
+
+body {
     background-color: antiquewhite;
     background: linear-gradient(120deg,
-                #1db954,
-                #191414);
+            #1db954,
+            #191414);
 }
-nav{
+
+nav {
     font-family: 'Ubuntu', sans-serif;
 }
-nav ul li{
+
+nav ul li {
     padding-left: 12px;
 }
-nav ul{
+
+nav ul {
     display: flex;
     height: 65px;
     background-color: black;
@@ -25,35 +30,40 @@ nav ul{
     color: white;
     align-items: center;
 }
-.brand{
+
+.brand {
     display: flex;
-    align-items:center ;
+    align-items: center;
     font-weight: bolder;
     font-size: 1.5rem;
 }
-.brand img{
+
+.brand img {
     height: 45px;
     padding: 8px;
 }
-.bottom{
+
+.bottom {
     position: sticky;
     height: 90px;
     background-color: black;
-    bottom:0;
+    bottom: 0;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.icons{
+
+.icons {
     margin: 10px 0 10px 0;
 }
-.icons i{
+
+.icons i {
     cursor: pointer;
 }
 
-.container{
+.container {
     min-height: 72vh;
     background-color: black;
     color: white;
@@ -70,10 +80,12 @@ nav ul{
     /* Isse image beech mein align ho jayegi */
     background-repeat: no-repeat;
 }
-#progressbar{
+
+#progressbar {
     width: 80vw;
     cursor: pointer;
 }
+
 .songitem {
     height: 50px;
     display: flex;
@@ -87,32 +99,38 @@ nav ul{
     justify-content: space-between;
     align-items: center;
 }
-.songitem img{
-     width: 70px;
-     height: auto;
+
+.songitem img {
+    width: 70px;
+    height: auto;
     border-radius: 10000px;
     margin: 0 15px;
 }
-.timestamp{
+
+.timestamp {
     margin: 0 15px;
     display: flex;
     align-items: center;
     gap: 10px;
 
 }
-.play{
+
+.play {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
 }
-.timestamp i{
+
+.timestamp i {
     cursor: pointer;
 }
-.songitemcontainer{
+
+.songitemcontainer {
     margin-top: 40px;
 }
-.songinfo{
+
+.songinfo {
     display: flex;
     align-items: center;
     position: absolute;
@@ -120,8 +138,13 @@ nav ul{
     font-family: "Varela Round",
         sans-serif;
 }
-.songinfo img{
+
+.songinfo img {
     opacity: 0;
     transition: opacity 1.5s ease-in;
     border-radius: 50%;
+}
+
+.songlist h1 {
+    color: #191414;
 }

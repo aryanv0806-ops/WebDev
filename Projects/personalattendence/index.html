@@ -109,7 +109,7 @@
                 <div id="clockog">00:00:00</div>
             </section>
             <section class="lecture">
-                <strong>Class:</strong><p id="subject">Application Programming</p>
+                <strong>Class:</strong><p id="subject"></p>
             </section>
         </div>
         <div class="attendance" id="attendance">
@@ -137,8 +137,9 @@
                 <input type="date" name="Date" id="date">
             </div>
             <div class="action-buttons">
-                <button class="btn-present" onclick="markSelected('Present')">✅ Present</button>
-                <button class="btn-absent" onclick="markSelected('Absent')">❌ Absent</button>
+                <button class="btn-present" id="present"> Present</button>
+                <button class="btn-absent" id="absent">Absent</button>
+                
             </div>
             
         </div>
