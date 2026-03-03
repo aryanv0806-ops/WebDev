@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nav Bar</title>
     <style>
-        body{
+        body {
             font-family: 'Times New Roman', Times, serif;
             background-color: antiquewhite;
-            margin:0px;
+            margin: 0px;
             padding: 20px;
         }
-        .card{
+
+        .card {
             background-color: #947c7c;
             margin: 10px;
             padding: 12px;
         }
-        .nav ul{
+
+        .nav ul {
             list-style-type: none;
             margin: 0px;
             padding: 0px;
             display: flex;
             justify-content: space-between;
         }
-        .nav li{
+
+        .nav li {
             display: inline;
 
         }
-        .nav a{
+
+        .nav a {
             text-decoration: none;
             color: aliceblue;
             padding: 5px 10px;
             position: relative;
         }
-        .nav a::before{
+
+        .nav a::before {
             content: "";
             position: absolute;
             height: 2px;
@@ -44,10 +50,12 @@
             transform: scaleX(0);
             transition: transform 0.3s ease-in-out;
         }
-        .nav a:hover::before{
+
+        .nav a:hover::before {
             transform: scaleX(1);
         }
-        .nav button{
+
+        .nav button {
             border-radius: 8px;
             background-color: #5e72d6;
             padding: 5px 10px;
@@ -56,13 +64,15 @@
             border-style: hidden;
             border-color: none;
         }
-        .nav button:hover{
+
+        .nav button:hover {
             background-color: azure;
             color: black;
             border-radius: 2px;
         }
     </style>
 </head>
+
 <body>
     <div class="card">
         <nav class="nav">
@@ -75,4 +85,5 @@
         </nav>
     </div>
 </body>
+
 </html>

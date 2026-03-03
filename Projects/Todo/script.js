@@ -17,20 +17,28 @@ document.addEventListener('DOMContentLoaded', () => {
         };
         tasks.push(newTask);
         saveTasks();
+        render(newTask);
         todo.value = "";
         console.log(tasks);
     })
-    function render(tasks) {
+    function render(task) {
         const li = document.createElement('li');
         li.setAttribute("data-id", tasks.id);
-        if (tasks.completed) li.classList.add("completed");
+        if (task.completed) li.classList.add("completed");
         li.innerHTML = `
-    <span>${tasks.text}</span>
+    <span>${task.text}</span>
     <button>Delete</button>`
         li.addEventListener('click', (e) => {
             if (e.target.tagName === 'button') return;
-            tasks.completed = !tasks.completed;
+            task.completed = !task.completed;
             li.classList.toggle('completed');
+            saveTasks();
+        })
+
+        li.querySelector('button').addEventListener('click', function (e) {
+            e.stopPropagation();//prevent toggle from firing
+            tasks = tasks.filter(t => t.id !== task.id);
+            li.remove();
             saveTasks();
         })
         todoitem.appendChild(li);

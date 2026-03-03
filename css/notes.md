@@ -101,3 +101,49 @@
     - Body tag: Only applies text properties, used to set default text properites across application.
     - Universal: appplies all properties, used to reset default styles.
 <!-- Pseudo elements padhna h abhi -->
+## 6. Pseudo elements:
+   -  Used to style specific part of an element.
+      - h2::"pseudo-selectorname";
+      - h2:: first-letter{};
+   - <b>Text Styling:</b> Used ot enhance visual appearance of text.
+     - :: first-letter, ::first-line(paragraph openeing line);
+   - <b>Selection:</b> Used to visual enhance the text a user selects.
+      - :: selection{};
+   - <b>Content Insetion: </b> used for adding decorative elements without altering html structure.
+      - ::before
+      - ::after
+## 7. CSS Box Model
+   - All html element are treated as rectangular boxes.
+   - Each box has its own set of properties.
+   - Border, Space between content and border(padding) and space between boxes(margin).
+   ### 1. Background color
+
+   - <b> Background color property</b>: Sets the bg color of an element and applies to the content  annd any padding.
+   ### 2. Width and Height
+   - <b>Default block level element dimensions:</b> Just big enough to fits its content vertically and `stretches full width horizonatally`.
+      - block elements container also spans full width of webpage and `height is sum of fontsize and some margins`.
+   - <b> Inline-Level Elements dimensions:</b> By default inline-level elements are just big enough to `fits its contents both Vertically and Horizontally`.
+   - <b>widht and height:</b> The default box dimensions can be overwritten by the width and height properties.
+   - <b> `Individual elements (h1,p,ul,li, etc,.) :<br> Height:: usually don't set height but let it be automatically determined.<br>
+   Width:: Usualy don't set width which will stretch to fill the parent container.`</b>.
+   - <b>` Container elements:<br>
+   Height:: Usually don't set height but let it be automatically determined.<br>
+   Width:: Depending on the layout it can be common to set a width.`</b>
+   - `Margins, padding and font size determines height in both the cases.`
+   - `This Approach ensures flexibility where content better adapts to different screen sizes.`
+   - <b > Inline level elements where height and width can be applied::<br>img, input, select, textarea, button:: (setting height or width will adjust the other dimension automatically to preserve aspect ratio.)
+   - <b> Can't apply width and height::
+   span, a (can use padding) ,sub, sup </b></b>
+   ### 3. Border
+   - Width: border-width:5px;
+   - style: border-style:solid;
+   - color: border-color:red;
+   - border: 5px solid red;
+   - #### border radius
+      - Pills: border radius = half of the elements height given the element is in rectangle earlier.
+      - Circles: from square border-radius= half of height.
+   ### 4. Box sizing:
+   -  How total width and height of an element is calculated
+   - box-sizing:border-box; box-sizing:content-box;  
+   - ` set the border-box on the universal selector`
+   
