@@ -20,4 +20,6 @@
    console.log(savedData.name);//Output:Aryan<br>
    ### Security and Limitations
    - Sensitive Data: koi bhi js code padhke ke local storage se sensitive data dekh sakta h.
-   
+
+## 2. Event Bubbling:
+- 

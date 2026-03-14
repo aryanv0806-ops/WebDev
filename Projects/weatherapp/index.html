@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Now!</title>
+    <link type="image/png" sizes="96x96" rel="icon" href="icons8-weather-96.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="head">
+        <div class="text">
+            <h1>Weather App!</h1>
+            <p>Check Weather Now!</p>
+        </div>
+    </header>
+    <main class="container">
+        <div class="box">
+            <div class="Check">
+                <input type="text" name="" id="city" placeholder="Enter City Name">
+                <button type="submit" id="btn">Check</button>
+            </div>
+            <div class="hidden" id="weather-info">
+                <h2 id="cityname"></h2>
+                <p id="temperature"></p>
+                <p id="description"></p>
+            </div>
+            <p id="error" class="hidden">City Not found, Please try again.</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
