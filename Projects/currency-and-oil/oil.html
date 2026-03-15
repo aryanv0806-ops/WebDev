@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency & Oil Updates!!</title>
+    <link rel="shortcut icon" href="exchange (1).png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script2.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="list">
+                <li><a href="index.html">Currency</a></li>
+                <li><a href="oil.html">Oil</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="oil-dashboard">
+        <h2>Global Oil Benchmarks</h2>
+
+        <div class="oil-cards-container">
+            <div class="oil-card">
+                <div class="oil-header">
+                    <img src="https://img.icons8.com/color/48/oil-industry.png" alt="oil-icon">
+                    <h3>Brent Crude</h3>
+                </div>
+                <div class="price-section">
+                    <span class="currency-symbol"></span>
+                    <span id="brent-price" class="price">0.00</span>
+                </div>
+                <div class="trend up"> <span class="arrow"></span>
+                    <span id="brent-change"></span>
+                </div>
+            </div>
+
+            <div class="oil-card">
+                <div class="oil-header">
+                    <img src="https://img.icons8.com/color/48/gas-station.png" alt="wti-icon">
+                    <h3>WTI Crude</h3>
+                </div>
+                <div class="price-section">
+                    <span class="currency-symbol"></span>
+                    <span id="wti-price" class="price">0.00</span>
+                </div>
+                <div class="trend down">
+                    <span class="arrow"></span>
+                    <span id="wti-change"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
